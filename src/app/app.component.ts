@@ -23,9 +23,9 @@ export class AppComponent {
   // chome
   customData = {
     version: "1.0.0",
-    cxAuthenticationDataToken: "7cc6e1be-0f36-4d05-9d6c-77a5ffc75401",
+    cxAuthenticationDataToken: "e85aeea9-c0f7-43c3-a337-6fc97fdc8f4e",
     cxClientInfo: {
-      CxDeviceId: "4e81aaf2-6680-392c-9267-69bebcbf67a4",
+      CxDeviceId: "ca95aeca-dbb8-4091-ae33-33945fee6f5e",
       DeviceType: "Browser",
       DrmClientType: "Widevine-HTML5",
       DrmClientVersion: "1.0.0"
@@ -41,7 +41,7 @@ export class AppComponent {
     var player = new Clappr.Player({
       // source: '//storage.googleapis.com/shaka-demo-assets/angel-one/dash.mpd',
       // source:'https://103.199.160.84/test/nagra-sd-single/index.mpd',//kccl
-      source: "http://45.249.171.148/chome_02/mazhavilmanoramahd/index.mpd", //chome
+      source: "http://103.199.160.81/kccl-01/sonybbcearth/index.mpd", //chome
       plugins: [DashShakaPlayback],
       shakaConfiguration: {
         preferredAudioLanguage: "en-US",
@@ -52,9 +52,9 @@ export class AppComponent {
       shakaOnBeforeLoad: function(shaka_player) {
         // var manifestUri ='https://storage.googleapis.com/shaka-demo-assets/sintel-widevine/dash.mpd';
         // var licenseServer = 'https://cwip-shaka-proxy.appspot.com/no_auth';
-        // var licenseServer = 'https://kccl-wvlic.cinesoft.live/license'; //kccl
-        var licenseServer =
-          "https://viewway.ap-south-1.conax.cloud:443/widevine/license";
+        var licenseServer = 'https://kccl-wvlic.cinesoft.live/license'; //kccl
+        // var licenseServer =
+        //   "https://viewway.ap-south-1.conax.cloud:443/widevine/license";
 
         shaka_player.configure({
           drm: {
